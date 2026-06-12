@@ -1,26 +1,26 @@
 id,total_correct,switches,n_clusters,mean_cluster_size,unknown_words,source_file
-11E,22,21,0,0,"fox, lion, dog, cat, bear, zebra, giraffe, hedgehog, frog, lizard, cow, sheep, llama, donkey, horse, polarbear, squirrel, bird, shark, dolphin, fish, octopus",SeLECTS_Cleaned_Responses_Animals.csv
-12E,24,23,0,0,"tiger, dog, cat, fish, llama, lamb, pig, meerkat, donkey, horse, guineapig, rabbit, rat, mouse, lion, jaguar, ladybird, ant, bee, wasp, monkey, cheetah, kangaroo, giraffe",SeLECTS_Cleaned_Responses_Animals.csv
-13E,8,7,0,0,"dog, cat, bird, frog, giraffe, elephant, dinosaur, seal",SeLECTS_Cleaned_Responses_Animals.csv
-14E,11,10,0,0,"tiger, dinosaur, seal, lion, cat, zebra, monkey, elephant, bulldog, pig, horse",SeLECTS_Cleaned_Responses_Animals.csv
-15E,17,16,0,0,"snake, insect, rabbit, human, fly, crocodile, alligator, lion, wilddog, cat, fish, bear, butterfly, centipede, scorpion, horse, bird",SeLECTS_Cleaned_Responses_Animals.csv
-16E,7,6,0,0,"dog, parrot, tiger, lion, turtle, giraffe, fish",SeLECTS_Cleaned_Responses_Animals.csv
-17E,18,17,0,0,"lion, tiger, elephant, dog, cat, rhinoceros, hippopotamus, hyena, cheetah, panda, frog, fish, bird, monkey, donkey, camel, fly, ladybird",SeLECTS_Cleaned_Responses_Animals.csv
-19E,8,7,0,0,"dog, tiger, rhinoceros, lion, owl, butterfly, turtle, tortoise",SeLECTS_Cleaned_Responses_Animals.csv
-1E,11,10,0,0,"monkey, cat, dog, lion, tiger, gorilla, turtle, hippopotamus, elephant, lizard, beardeddragon",SeLECTS_Cleaned_Responses_Animals.csv
-20E,8,7,0,0,"cat, dog, mouse, tiger, hyena, sheep, horse, chicken",SeLECTS_Cleaned_Responses_Animals.csv
-21E,7,6,0,0,"tiger, lion, horse, pig, donkey, cow, duck",SeLECTS_Cleaned_Responses_Animals.csv
-22E,17,16,0,0,"dog, cat, tiger, penguin, whale, polarbear, shark, fish, cheetah, giraffe, elephant, lemur, horse, donkey, rabbit, lizard, snake",SeLECTS_Cleaned_Responses_Animals.csv
-24E,13,12,0,0,"dog, cat, horse, fish, sheep, cow, tiger, hippopotamus, elephant, giraffe, rabbit, deer, monkey",SeLECTS_Cleaned_Responses_Animals.csv
-25E,16,15,0,0,"snake, dog, cat, rabbit, eagle, seagull, crocodile, fish, frog, worm, slug, snail, mouse, rat, hamster, guineapig",SeLECTS_Cleaned_Responses_Animals.csv
-26E,15,14,0,0,"dog, tiger, elephant, lion, cheetah, snake, spider, pig, cow, sheep, chicken, wolf, jaguar, fish, whale",SeLECTS_Cleaned_Responses_Animals.csv
-28E,14,13,0,0,"lionfish, antelope, tiger, dog, cat, lion, polarbear, shark, cow, pig, sheep, chicken, snake, parrot",SeLECTS_Cleaned_Responses_Animals.csv
-29E,16,15,0,0,"dog, cat, hippopotamus, elephant, tiger, lion, cheetah, monkey, bird, rat, mouse, gorilla, shark, fish, crocodile, frog",SeLECTS_Cleaned_Responses_Animals.csv
-2E,11,10,0,0,"tiger, lion, elephant, dog, cat, giraffe, woodpecker, squirrel, hedgehog, beetle, mosquito",SeLECTS_Cleaned_Responses_Animals.csv
-3E,9,8,0,0,"tiger, lion, cat, bear, goat, cow, dog, hyena, rabbit",SeLECTS_Cleaned_Responses_Animals.csv
-4E,12,11,0,0,"dog, tiger, cat, lion, elephant, monkey, baboon, gorilla, lizard, fish, rabbit, guineapig",SeLECTS_Cleaned_Responses_Animals.csv
-5E,9,8,0,0,"elephant, tiger, leopard, cheetah, giraffe, lizard, chameleon, monkey, kangaroo",SeLECTS_Cleaned_Responses_Animals.csv
-6E,13,12,0,0,"dog, tiger, cat, fish, giraffe, elephant, monkey, gorilla, parrot, alligator, squirrel, hedgehog, pigeon",SeLECTS_Cleaned_Responses_Animals.csv
-7E,9,8,0,0,"tiger, giraffe, lion, dog, cat, cheetah, koala, monkey, gorilla",SeLECTS_Cleaned_Responses_Animals.csv
-8E,17,16,0,0,"cat, dog, snake, pig, cow, sheep, tiger, lion, elephant, rhinoceros, polarbear, chameleon, crocodile, alligator, bird, fish, shark",SeLECTS_Cleaned_Responses_Animals.csv
-9E,16,15,0,0,"gecko, lizard, cat, dog, cow, pig, sheep, chicken, duck, leopard, parrot, monkey, lion, tiger, flamingo, capybara",SeLECTS_Cleaned_Responses_Animals.csv
+11E,22,12,6,1.5,,SeLECTS_Cleaned_Responses_Animals.csv
+12E,24,13,8,1.25,,SeLECTS_Cleaned_Responses_Animals.csv
+13E,8,5,2,1.0,,SeLECTS_Cleaned_Responses_Animals.csv
+14E,11,7,2,1.5,,SeLECTS_Cleaned_Responses_Animals.csv
+15E,17,13,2,1.5,,SeLECTS_Cleaned_Responses_Animals.csv
+16E,7,4,2,1.0,,SeLECTS_Cleaned_Responses_Animals.csv
+17E,18,8,6,1.5,,SeLECTS_Cleaned_Responses_Animals.csv
+19E,8,4,2,1.5,,SeLECTS_Cleaned_Responses_Animals.csv
+1E,11,5,4,1.25,,SeLECTS_Cleaned_Responses_Animals.csv
+20E,8,3,3,1.3333333333333333,,SeLECTS_Cleaned_Responses_Animals.csv
+21E,7,2,2,2.0,,SeLECTS_Cleaned_Responses_Animals.csv
+22E,17,8,6,1.3333333333333333,,SeLECTS_Cleaned_Responses_Animals.csv
+24E,13,6,4,1.5,,SeLECTS_Cleaned_Responses_Animals.csv
+25E,16,7,5,1.6,,SeLECTS_Cleaned_Responses_Animals.csv
+26E,15,5,3,3.0,,SeLECTS_Cleaned_Responses_Animals.csv
+28E,14,7,3,2.0,,SeLECTS_Cleaned_Responses_Animals.csv
+29E,16,6,5,1.8,,SeLECTS_Cleaned_Responses_Animals.csv
+2E,11,5,4,1.25,,SeLECTS_Cleaned_Responses_Animals.csv
+3E,9,5,3,1.0,,SeLECTS_Cleaned_Responses_Animals.csv
+4E,12,6,2,2.5,,SeLECTS_Cleaned_Responses_Animals.csv
+5E,9,2,2,3.0,,SeLECTS_Cleaned_Responses_Animals.csv
+6E,13,8,2,2.0,,SeLECTS_Cleaned_Responses_Animals.csv
+7E,9,4,3,1.3333333333333333,,SeLECTS_Cleaned_Responses_Animals.csv
+8E,17,6,5,2.0,,SeLECTS_Cleaned_Responses_Animals.csv
+9E,16,7,4,2.0,,SeLECTS_Cleaned_Responses_Animals.csv
