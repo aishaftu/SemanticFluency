@@ -1,7 +1,7 @@
 source_file,n_participants,n_responses,n_unique_words,mean_total_correct,mean_switches,mean_n_clusters
 HC_Cleaned_Responses_Animals.csv,25,394,118,15.76,7.44,3.8
-HC_Cleaned_Responses_Food.csv,25,418,139,16.72,15.68,0.04
-HC_Cleaned_Responses_jobs.csv,22,181,81,8.227272727272727,7.2272727272727275,0.0
+HC_Cleaned_Responses_Food.csv,25,418,139,16.72,13.12,1.88
+HC_Cleaned_Responses_jobs.csv,22,181,81,8.227272727272727,6.5,0.6363636363636364
 SeLECTS_Cleaned_Responses_Animals.csv,25,328,91,13.12,6.32,3.6
-SeLECTS_Cleaned_Responses_Food.csv,25,310,119,12.4,11.36,0.04
-SeLECTS_Cleaned_Responses_jobs.csv,22,182,70,8.272727272727273,7.2727272727272725,0.0
+SeLECTS_Cleaned_Responses_Food.csv,25,310,119,12.4,9.36,1.36
+SeLECTS_Cleaned_Responses_jobs.csv,22,182,70,8.272727272727273,6.5,0.6818181818181818

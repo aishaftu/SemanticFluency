@@ -1,23 +1,23 @@
 id,total_correct,switches,n_clusters,mean_cluster_size,unknown_words,source_file
-11E,17,16,0,0,"policeofficer, ambulancedriver, firefighter, midwife, nurse, teacher, doctor, fisherman, sailor, cashier, manager, mechanic, officeworker, factoryworker, mountainrescue, chef, waiter",SeLECTS_Cleaned_Responses_jobs.csv
-12E,11,10,0,0,"teacher, teachingassistant, zookeeper, shopkeeper, entertainer, hairdresser, barman, jewelrymaker, dressmaker, shoemaker, factoryworker",SeLECTS_Cleaned_Responses_jobs.csv
-15E,4,3,0,0,"policeofficer, cleaner, mechanic, babysitter",SeLECTS_Cleaned_Responses_jobs.csv
-16E,1,0,0,0,babysitter,SeLECTS_Cleaned_Responses_jobs.csv
-17E,6,5,0,0,"mechanic, nurse, doctor, inventor, teacher, scientist",SeLECTS_Cleaned_Responses_jobs.csv
-19E,5,4,0,0,"babysitter, doctor, teacher, dinnerlady, servant",SeLECTS_Cleaned_Responses_jobs.csv
-1E,6,5,0,0,"builder, scaffolder, policeofficer, ambulancedriver, teacher, babysitter",SeLECTS_Cleaned_Responses_jobs.csv
-21E,7,6,0,0,"artist, recpetionist, veterinarian, policeofficer, nurse, doctor, dentist",SeLECTS_Cleaned_Responses_jobs.csv
-22E,12,11,0,0,"engineer, teacher, nurse, doctor, builder, designer, blacksmith, farmer, dancer, singer, archaeologist, scientist",SeLECTS_Cleaned_Responses_jobs.csv
-24E,7,6,0,0,"waiter, accountant, farmer, zookeeper, dogwalker, babysitter, manager",SeLECTS_Cleaned_Responses_jobs.csv
-25E,12,11,0,0,"teachingassistant, teacher, builder, plumber, caretaker, nurse, doctor, surgeon, cleaner, veterinarian, headteacher, hairdresser",SeLECTS_Cleaned_Responses_jobs.csv
-26E,16,15,0,0,"babysitter, mechanic, entrepreneur, designer, soldier, policeofficer, firefighter, doctor, surgeon, dentist, nurse, officeworker, cashier, shelfstacker, chef, waiter",SeLECTS_Cleaned_Responses_jobs.csv
-28E,10,9,0,0,"nurse, firefighter, policeofficer, teacher, plumber, engineer, you-tuber, doctor, dentist, medic",SeLECTS_Cleaned_Responses_jobs.csv
-29E,5,4,0,0,"nurse, doctor, postman, firefighter, policeofficer",SeLECTS_Cleaned_Responses_jobs.csv
-2E,9,8,0,0,"motorbikemechanic, scientist, zookeeper, cameraman, director, footballer, goalie, manager, headteacher",SeLECTS_Cleaned_Responses_jobs.csv
-3E,9,8,0,0,"midwife, policeofficer, ambulancedriver, firefighter, teacher, teachingassistant, nurse, babysitter, mechanic",SeLECTS_Cleaned_Responses_jobs.csv
-4E,10,9,0,0,"babysitter, mechanic, teacher, veterinarian, firefighter, policeofficer, ambulancedriver, nurse, doctor, builder",SeLECTS_Cleaned_Responses_jobs.csv
-5E,8,7,0,0,"cleaner, footballer, babysitter, mechanic, builder, rugbyplayer, farmer, designer",SeLECTS_Cleaned_Responses_jobs.csv
-6E,3,2,0,0,"mechanic, doctor, babysitter",SeLECTS_Cleaned_Responses_jobs.csv
-7E,1,0,0,0,mechanic,SeLECTS_Cleaned_Responses_jobs.csv
-8E,12,11,0,0,"teacher, electrician, babysitter, receptionist, doctor, firefighter, policeofficer, archaeologist, scientist, officeworker, builder, dustbinman",SeLECTS_Cleaned_Responses_jobs.csv
-9E,11,10,0,0,"doctor, blacksmith, chemist, nurse, policeofficer, designer, animator, musician, artist, singer, grocer",SeLECTS_Cleaned_Responses_jobs.csv
+11E,17,15,1,1.0,"policeofficer, ambulancedriver, firefighter, fisherman, sailor, cashier, officeworker, factoryworker, mountainrescue",SeLECTS_Cleaned_Responses_jobs.csv
+12E,11,10,0,0.0,"teachingassistant, zookeeper, shopkeeper, entertainer, barman, jewelrymaker, dressmaker, shoemaker, factoryworker",SeLECTS_Cleaned_Responses_jobs.csv
+15E,4,3,0,0.0,"policeofficer, cleaner",SeLECTS_Cleaned_Responses_jobs.csv
+16E,1,0,0,0.0,,SeLECTS_Cleaned_Responses_jobs.csv
+17E,6,4,1,1.0,,SeLECTS_Cleaned_Responses_jobs.csv
+19E,5,4,0,0.0,"dinnerlady, servant",SeLECTS_Cleaned_Responses_jobs.csv
+1E,6,3,2,1.0,"policeofficer, ambulancedriver",SeLECTS_Cleaned_Responses_jobs.csv
+21E,7,4,1,2.0,"recpetionist, veterinarian, policeofficer",SeLECTS_Cleaned_Responses_jobs.csv
+22E,12,10,1,1.0,"engineer, blacksmith, dancer, archaeologist",SeLECTS_Cleaned_Responses_jobs.csv
+24E,7,6,0,0.0,"accountant, zookeeper, dogwalker",SeLECTS_Cleaned_Responses_jobs.csv
+25E,12,10,1,1.0,"teachingassistant, surgeon, cleaner, veterinarian",SeLECTS_Cleaned_Responses_jobs.csv
+26E,16,14,1,1.0,"entrepreneur, soldier, policeofficer, firefighter, surgeon, officeworker, cashier, shelfstacker",SeLECTS_Cleaned_Responses_jobs.csv
+28E,10,8,1,1.0,"firefighter, policeofficer, engineer, you-tuber, medic",SeLECTS_Cleaned_Responses_jobs.csv
+29E,5,3,1,1.0,"postman, firefighter, policeofficer",SeLECTS_Cleaned_Responses_jobs.csv
+2E,9,5,2,1.5,"motorbikemechanic, zookeeper",SeLECTS_Cleaned_Responses_jobs.csv
+3E,9,8,0,0.0,"policeofficer, ambulancedriver, firefighter, teachingassistant",SeLECTS_Cleaned_Responses_jobs.csv
+4E,10,8,1,1.0,"veterinarian, firefighter, policeofficer, ambulancedriver",SeLECTS_Cleaned_Responses_jobs.csv
+5E,8,7,0,0.0,"cleaner, rugbyplayer",SeLECTS_Cleaned_Responses_jobs.csv
+6E,3,2,0,0.0,,SeLECTS_Cleaned_Responses_jobs.csv
+7E,1,0,0,0.0,,SeLECTS_Cleaned_Responses_jobs.csv
+8E,12,10,1,1.0,"receptionist, firefighter, policeofficer, archaeologist, officeworker, dustbinman",SeLECTS_Cleaned_Responses_jobs.csv
+9E,11,9,1,1.0,"blacksmith, chemist, policeofficer, animator, musician, grocer",SeLECTS_Cleaned_Responses_jobs.csv
