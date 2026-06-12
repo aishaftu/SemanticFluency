@@ -1,0 +1,84 @@
+﻿category,word
+Hospital/care,doctor
+Hospital/care,nurse
+Hospital/care,hospital worker
+Hospital/care,vet
+Hospital/care,midwife
+Hospital/care,dentist
+Hospital/care,physio
+School,teacher
+School,headteacher
+School,teaching assistant
+School,school cook
+School,dinner time staff
+School,janitor
+School,after-school club worker
+School,caretaker
+Retail,shop worker
+Retail,pub worker
+Retail,waiter
+Retail,bank worker
+Salon,beautician
+Salon,hairdresser
+House,babysitter
+House,house cleaner
+House,plumber
+House,boiler person
+House,electrician
+Sports,footballer
+Sports,goalie
+Sports,manager
+Sports,cyclist
+Sports,Olympian
+Sports,horse rider
+Sports,athlete
+Sports,racecar driver
+Sports,basketball player
+Sports,cheerleader
+Services,policeman
+Services,ambulance man
+Services,fireman
+Manual labour,builder
+Manual labour,scaffolder
+Manual labour,oil rig worker
+Manual labour,painter
+Manual labour,window cleaner
+Manual labour,farmer
+Technical,mechanic
+Technical,electrician
+Technical,plumber
+Driver,train driver
+Driver,taxi driver
+Driver,boat driver
+Driver,pilot
+Performance,actor
+Performance,comedian
+Performance,singer
+Performance,model
+Film/entertainment,cameraman
+Film/entertainment,director
+Film/entertainment,actor
+Film/entertainment,comedian
+Film/entertainment,singer
+Film/entertainment,artist
+Film/entertainment,model
+Science and research,researcher
+Science and research,scientist
+Science and research,inventor
+Managerial,manager
+Managerial,boss
+Managerial,businessperson
+Child care,babysitter
+Child care,child care worker
+Child care,nursery teacher
+Child care,teacher
+Child care,playgroup worker
+Creative,designer
+Creative,artist
+Creative,fashion designer
+Creative,film designer
+Creative,game designer
+Food,cook
+Food,waitress
+Food,chef
+Food,baker
