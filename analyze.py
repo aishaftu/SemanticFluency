@@ -61,6 +61,9 @@ def reshape_data(df):
     melted = melted.rename(columns={participant_col: 'id'})
     melted['word'] = melted['word'].astype(str).str.lower().str.strip()
     
+    # Remove spaces from multi-word entries (e.g., "polar bear" -> "polarbear")
+    melted['word'] = melted['word'].str.replace(' ', '', regex=False)
+    
     # Remove empty/NA/null responses
     melted = melted[melted['word'].notna()]
     melted = melted[melted['word'] != 'nan']

@@ -1,23 +1,23 @@
 id,total_correct,switches,n_clusters,mean_cluster_size,unknown_words,source_file
-1,2,1,0,0,"hospital worker, doctor",HC_Cleaned_Responses_jobs.csv
-6,9,8,0,0,"careworker, electrician, babysitter, mechanic, builder, athlete, estate agent, tv presenter, field commander",HC_Cleaned_Responses_jobs.csv
-7,6,5,0,0,"veterinarian, ambulance driver, police officer, doctor, footballer, runner",HC_Cleaned_Responses_jobs.csv
+1,2,1,0,0,"hospitalworker, doctor",HC_Cleaned_Responses_jobs.csv
+6,9,8,0,0,"careworker, electrician, babysitter, mechanic, builder, athlete, estateagent, tvpresenter, fieldcommander",HC_Cleaned_Responses_jobs.csv
+7,6,5,0,0,"veterinarian, ambulancedriver, policeofficer, doctor, footballer, runner",HC_Cleaned_Responses_jobs.csv
 13,8,7,0,0,"teacher, builder, mechanic, cook, waiter, scientist, babysitter, veterinarian",HC_Cleaned_Responses_jobs.csv
-14,8,7,0,0,"engineer, sculptor, babysitter, office worker, mechanic, taxi driver, window cleaner, artist",HC_Cleaned_Responses_jobs.csv
-17,8,7,0,0,"teacher, zookeeper, nurse, childminder, police officer, fire fighter, mechanic, builder",HC_Cleaned_Responses_jobs.csv
-18,7,6,0,0,"teacher, babysitter, window cleaner, builder, shop worker, doctor, hospital worker",HC_Cleaned_Responses_jobs.csv
+14,8,7,0,0,"engineer, sculptor, babysitter, officeworker, mechanic, taxidriver, windowcleaner, artist",HC_Cleaned_Responses_jobs.csv
+17,8,7,0,0,"teacher, zookeeper, nurse, childminder, policeofficer, firefighter, mechanic, builder",HC_Cleaned_Responses_jobs.csv
+18,7,6,0,0,"teacher, babysitter, windowcleaner, builder, shopworker, doctor, hospitalworker",HC_Cleaned_Responses_jobs.csv
 20,7,6,0,0,"teacher, veterinarian, diver, archaeologist, designer, mechanic, builder",HC_Cleaned_Responses_jobs.csv
-21,13,12,0,0,"police officer, electrician, singer, actor, designer, wedding planner, baker, archaeologist, footballer, business person, waiter, photographer, pilot",HC_Cleaned_Responses_jobs.csv
-23,4,3,0,0,"formula one racer, police officer, inspector, babysitter",HC_Cleaned_Responses_jobs.csv
+21,13,12,0,0,"policeofficer, electrician, singer, actor, designer, weddingplanner, baker, archaeologist, footballer, businessperson, waiter, photographer, pilot",HC_Cleaned_Responses_jobs.csv
+23,4,3,0,0,"formulaoneracer, policeofficer, inspector, babysitter",HC_Cleaned_Responses_jobs.csv
 25,6,5,0,0,"footballer, mechanic, nurse, doctor, physiotherapist, scientist",HC_Cleaned_Responses_jobs.csv
-26,11,10,0,0,"engineer, teacher, teaching assistant, manager, mechanic, electrician, nursery teacher, scientist, beautician, hairdresser, athlete",HC_Cleaned_Responses_jobs.csv
-31,14,13,0,0,"babysitter, mechanic, teacher, footballer, athlete, dentist, nurse, doctor, racecar driver, actor, comedian, shop worker, builder, farmer",HC_Cleaned_Responses_jobs.csv
-33,11,10,0,0,"mechanic, babysitter, formula one racer, tennis player, cricketer, footballer, teacher, nurse, headteacher, business person, landlord",HC_Cleaned_Responses_jobs.csv
-35,9,8,0,0,"doctor, teacher, teaching assistant, nurse, painter, decorator, shop mager, engineer, runner",HC_Cleaned_Responses_jobs.csv
-39,13,12,0,0,"football, rugby player, basketball player, doctor, mechanic, babysitter, manager, shop keeper, postman, delivery driver, physical education teacher, coach, fire fighter",HC_Cleaned_Responses_jobs.csv
-40,11,10,0,0,"babysitter, runner, athlete, lawyer, entrepreneur, plumber, police officer, fire fighter, nurse, doctor, electrician",HC_Cleaned_Responses_jobs.csv
-43,8,7,0,0,"physiotherapist, doctor, teacher, headteacher, babysitter, ballet teacher, gymnastics teacher, deputy head",HC_Cleaned_Responses_jobs.csv
-49,7,6,0,0,"teacher, doctor, veterinarian, shop keeper, butcher, dentist, painter",HC_Cleaned_Responses_jobs.csv
-55,5,4,0,0,"manager, police officer, dentist, nurse, doctor",HC_Cleaned_Responses_jobs.csv
-56,12,11,0,0,"police officer, housekeeper, servant, cook, chef, workman, doctor, baker, construction worker, builder, hairdresser, barber",HC_Cleaned_Responses_jobs.csv
+26,11,10,0,0,"engineer, teacher, teachingassistant, manager, mechanic, electrician, nurseryteacher, scientist, beautician, hairdresser, athlete",HC_Cleaned_Responses_jobs.csv
+31,14,13,0,0,"babysitter, mechanic, teacher, footballer, athlete, dentist, nurse, doctor, racecardriver, actor, comedian, shopworker, builder, farmer",HC_Cleaned_Responses_jobs.csv
+33,11,10,0,0,"mechanic, babysitter, formulaoneracer, tennisplayer, cricketer, footballer, teacher, nurse, headteacher, businessperson, landlord",HC_Cleaned_Responses_jobs.csv
+35,9,8,0,0,"doctor, teacher, teachingassistant, nurse, painter, decorator, shopmager, engineer, runner",HC_Cleaned_Responses_jobs.csv
+39,13,12,0,0,"football, rugbyplayer, basketballplayer, doctor, mechanic, babysitter, manager, shopkeeper, postman, deliverydriver, physicaleducationteacher, coach, firefighter",HC_Cleaned_Responses_jobs.csv
+40,11,10,0,0,"babysitter, runner, athlete, lawyer, entrepreneur, plumber, policeofficer, firefighter, nurse, doctor, electrician",HC_Cleaned_Responses_jobs.csv
+43,8,7,0,0,"physiotherapist, doctor, teacher, headteacher, babysitter, balletteacher, gymnasticsteacher, deputyhead",HC_Cleaned_Responses_jobs.csv
+49,7,6,0,0,"teacher, doctor, veterinarian, shopkeeper, butcher, dentist, painter",HC_Cleaned_Responses_jobs.csv
+55,5,4,0,0,"manager, policeofficer, dentist, nurse, doctor",HC_Cleaned_Responses_jobs.csv
+56,12,11,0,0,"policeofficer, housekeeper, servant, cook, chef, workman, doctor, baker, constructionworker, builder, hairdresser, barber",HC_Cleaned_Responses_jobs.csv
 59,2,1,0,0,"teacher, farmer",HC_Cleaned_Responses_jobs.csv
