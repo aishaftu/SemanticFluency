@@ -1,0 +1,183 @@
+participant_id,word,order,cluster_id,category
+11E,policeofficer,1,1,Unknown
+11E,ambulancedriver,2,2,Unknown
+11E,firefighter,3,3,Unknown
+11E,midwife,4,4,hospital/care
+11E,nurse,5,4,hospital/care
+11E,teacher,6,5,child care
+11E,doctor,7,6,hospital/care
+11E,fisherman,8,7,Unknown
+11E,sailor,9,8,Unknown
+11E,cashier,10,9,Unknown
+11E,manager,11,10,managerial
+11E,mechanic,12,11,technical
+11E,officeworker,13,12,Unknown
+11E,factoryworker,14,13,Unknown
+11E,mountainrescue,15,14,Unknown
+11E,chef,16,15,food
+11E,waiter,17,16,retail
+12E,teacher,1,1,child care
+12E,teachingassistant,2,2,Unknown
+12E,zookeeper,3,3,Unknown
+12E,shopkeeper,4,4,Unknown
+12E,entertainer,5,5,Unknown
+12E,hairdresser,6,6,salon
+12E,barman,7,7,Unknown
+12E,jewelrymaker,8,8,Unknown
+12E,dressmaker,9,9,Unknown
+12E,shoemaker,10,10,Unknown
+12E,factoryworker,11,11,Unknown
+15E,policeofficer,1,1,Unknown
+15E,cleaner,2,2,Unknown
+15E,mechanic,3,3,technical
+15E,babysitter,4,4,house
+16E,babysitter,1,1,house
+17E,mechanic,1,1,technical
+17E,nurse,2,2,hospital/care
+17E,doctor,3,2,hospital/care
+17E,inventor,4,3,science and research
+17E,teacher,5,4,child care
+17E,scientist,6,5,science and research
+19E,babysitter,1,1,house
+19E,doctor,2,2,hospital/care
+19E,teacher,3,3,child care
+19E,dinnerlady,4,4,Unknown
+19E,servant,5,5,Unknown
+1E,builder,1,1,manual labour
+1E,scaffolder,2,1,manual labour
+1E,policeofficer,3,2,Unknown
+1E,ambulancedriver,4,3,Unknown
+1E,teacher,5,4,child care
+1E,babysitter,6,4,house
+21E,artist,1,1,creative
+21E,recpetionist,2,2,Unknown
+21E,veterinarian,3,3,Unknown
+21E,policeofficer,4,4,Unknown
+21E,nurse,5,5,hospital/care
+21E,doctor,6,5,hospital/care
+21E,dentist,7,5,hospital/care
+22E,engineer,1,1,Unknown
+22E,teacher,2,2,child care
+22E,nurse,3,3,hospital/care
+22E,doctor,4,3,hospital/care
+22E,builder,5,4,manual labour
+22E,designer,6,5,creative
+22E,blacksmith,7,6,Unknown
+22E,farmer,8,7,manual labour
+22E,dancer,9,8,Unknown
+22E,singer,10,9,performance
+22E,archaeologist,11,10,Unknown
+22E,scientist,12,11,science and research
+24E,waiter,1,1,retail
+24E,accountant,2,2,Unknown
+24E,farmer,3,3,manual labour
+24E,zookeeper,4,4,Unknown
+24E,dogwalker,5,5,Unknown
+24E,babysitter,6,6,house
+24E,manager,7,7,managerial
+25E,teachingassistant,1,1,Unknown
+25E,teacher,2,2,child care
+25E,builder,3,3,manual labour
+25E,plumber,4,4,house
+25E,caretaker,5,5,school
+25E,nurse,6,6,hospital/care
+25E,doctor,7,6,hospital/care
+25E,surgeon,8,7,Unknown
+25E,cleaner,9,8,Unknown
+25E,veterinarian,10,9,Unknown
+25E,headteacher,11,10,school
+25E,hairdresser,12,11,salon
+26E,babysitter,1,1,house
+26E,mechanic,2,2,technical
+26E,entrepreneur,3,3,Unknown
+26E,designer,4,4,creative
+26E,soldier,5,5,Unknown
+26E,policeofficer,6,6,Unknown
+26E,firefighter,7,7,Unknown
+26E,doctor,8,8,hospital/care
+26E,surgeon,9,9,Unknown
+26E,dentist,10,10,hospital/care
+26E,nurse,11,10,hospital/care
+26E,officeworker,12,11,Unknown
+26E,cashier,13,12,Unknown
+26E,shelfstacker,14,13,Unknown
+26E,chef,15,14,food
+26E,waiter,16,15,retail
+28E,nurse,1,1,hospital/care
+28E,firefighter,2,2,Unknown
+28E,policeofficer,3,3,Unknown
+28E,teacher,4,4,child care
+28E,plumber,5,5,house
+28E,engineer,6,6,Unknown
+28E,you-tuber,7,7,Unknown
+28E,doctor,8,8,hospital/care
+28E,dentist,9,8,hospital/care
+28E,medic,10,9,Unknown
+29E,nurse,1,1,hospital/care
+29E,doctor,2,1,hospital/care
+29E,postman,3,2,Unknown
+29E,firefighter,4,3,Unknown
+29E,policeofficer,5,4,Unknown
+2E,motorbikemechanic,1,1,Unknown
+2E,scientist,2,2,science and research
+2E,zookeeper,3,3,Unknown
+2E,cameraman,4,4,film/entertainment
+2E,director,5,4,film/entertainment
+2E,footballer,6,5,sports
+2E,goalie,7,5,sports
+2E,manager,8,5,managerial
+2E,headteacher,9,6,school
+3E,midwife,1,1,hospital/care
+3E,policeofficer,2,2,Unknown
+3E,ambulancedriver,3,3,Unknown
+3E,firefighter,4,4,Unknown
+3E,teacher,5,5,child care
+3E,teachingassistant,6,6,Unknown
+3E,nurse,7,7,hospital/care
+3E,babysitter,8,8,house
+3E,mechanic,9,9,technical
+4E,babysitter,1,1,house
+4E,mechanic,2,2,technical
+4E,teacher,3,3,child care
+4E,veterinarian,4,4,Unknown
+4E,firefighter,5,5,Unknown
+4E,policeofficer,6,6,Unknown
+4E,ambulancedriver,7,7,Unknown
+4E,nurse,8,8,hospital/care
+4E,doctor,9,8,hospital/care
+4E,builder,10,9,manual labour
+5E,cleaner,1,1,Unknown
+5E,footballer,2,2,sports
+5E,babysitter,3,3,house
+5E,mechanic,4,4,technical
+5E,builder,5,5,manual labour
+5E,rugbyplayer,6,6,Unknown
+5E,farmer,7,7,manual labour
+5E,designer,8,8,creative
+6E,mechanic,1,1,technical
+6E,doctor,2,2,hospital/care
+6E,babysitter,3,3,house
+7E,mechanic,1,1,technical
+8E,teacher,1,1,child care
+8E,electrician,2,2,house
+8E,babysitter,3,2,house
+8E,receptionist,4,3,Unknown
+8E,doctor,5,4,hospital/care
+8E,firefighter,6,5,Unknown
+8E,policeofficer,7,6,Unknown
+8E,archaeologist,8,7,Unknown
+8E,scientist,9,8,science and research
+8E,officeworker,10,9,Unknown
+8E,builder,11,10,manual labour
+8E,dustbinman,12,11,Unknown
+9E,doctor,1,1,hospital/care
+9E,blacksmith,2,2,Unknown
+9E,chemist,3,3,Unknown
+9E,nurse,4,4,hospital/care
+9E,policeofficer,5,5,Unknown
+9E,designer,6,6,creative
+9E,animator,7,7,Unknown
+9E,musician,8,8,Unknown
+9E,artist,9,9,creative
+9E,singer,10,9,performance
+9E,grocer,11,10,Unknown
