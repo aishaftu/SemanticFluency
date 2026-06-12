@@ -1,26 +1,26 @@
 id,total_correct,switches,n_clusters,mean_cluster_size,unknown_words,source_file
-11E,17,16,0,0.0,"biscuits, candyfloss, chocolate, pork, sweets, hotdog, popcorn, yoghurt, cerealbar, raisin, salad, tomato, cabbage, sprout, cucumber",SeLECTS_Cleaned_Responses_Food.csv
-12E,18,16,1,1.0,"spaghetti, fishandchips, pizza, bean, pancake, toastie, hamsandwich, cheese, chocolate, toffee, sausage, chickennuggets, burger, spaghettihoops, crisps, bacon",SeLECTS_Cleaned_Responses_Food.csv
-13E,11,10,0,0.0,"carrot, potato, apple, chewits, jelly, banana, orange, chocolate, wrap, yoghurt, porridge",SeLECTS_Cleaned_Responses_Food.csv
-14E,12,11,0,0.0,"pizza, apple, pear, wrap, chocolate, chocolatecake, crisps, carrot, roastdinner, orange, banana, tangerine",SeLECTS_Cleaned_Responses_Food.csv
-15E,17,16,0,0.0,"chewits, chocolate, bread, ham, banana, orange, apple, plum, potato, wrap, lollipop, cheese, egg, crisps, bacon, pepper, tomato",SeLECTS_Cleaned_Responses_Food.csv
-16E,10,9,0,0.0,"chips, pizza, broccoli, fishcake, fishfingers, pea, chocolate, cheese, bean",SeLECTS_Cleaned_Responses_Food.csv
-17E,8,7,0,0.0,"lettuce, apple, chips, pizza, burger, pear, banana",SeLECTS_Cleaned_Responses_Food.csv
-19E,15,14,0,0.0,"pizza, apple, pasta, couscous, yoghurt, salad, chocolatecake, banana, orange, grape, carrot, potato, kale, beetroot",SeLECTS_Cleaned_Responses_Food.csv
-1E,13,12,0,0.0,"curry, sausage, mashedpotato, bean, toast, apple, banana, pear, mango, ravioli, spaghetti, cookies, penguinbars",SeLECTS_Cleaned_Responses_Food.csv
-20E,6,5,0,0.0,"pizza, apple, egg, sausage, bean, tomato",SeLECTS_Cleaned_Responses_Food.csv
-21E,9,8,0,0.0,"pizza, chips, chocolatedoughnut, chocolate, crisps, biscuits, hamsandwich, taco",SeLECTS_Cleaned_Responses_Food.csv
-22E,14,13,0,0.0,"banana, apple, sweets, potato, sandwich, tomato, carrot, cucumber, pineapple, mango, chocolate, cake, icecream",SeLECTS_Cleaned_Responses_Food.csv
-24E,8,7,0,0.0,"pizza, apple, pear, banana, yoghurt, carrot, pasta, lettuce",SeLECTS_Cleaned_Responses_Food.csv
-25E,21,20,0,0.0,"apple, banana, orange, grape, grapefruit, passionfruit, pizza, chips, burger, pasta, nuts, crisps, sweets, cake, doughnut, cabbage, carrot, broccoli, sprout, lemon, blackcurrant",SeLECTS_Cleaned_Responses_Food.csv
-26E,14,13,0,0.0,"pizza, apple, banana, orange, grape, avocado, tomato, pepper, onion, chocolate, licorice, burger, chips",SeLECTS_Cleaned_Responses_Food.csv
-28E,12,11,0,0.0,"margaritapizza, rice, chips, cornflakes, weetabix, cookies, eggplant, celery, carrot, tomato, apple, orange",SeLECTS_Cleaned_Responses_Food.csv
-29E,14,13,0,0.0,"apple, banana, orange, pear, tomato, potato, pizza, bean, cheese, toast, cereal, sausage, burger",SeLECTS_Cleaned_Responses_Food.csv
-2E,14,13,0,0.0,"apple, banana, cheese, crisps, icelolly, fishfingers, chips, pear, melon, watermelon, bread, crumpets, biscuits",SeLECTS_Cleaned_Responses_Food.csv
-3E,8,7,0,0.0,"lettuce, fruit, hotdog, sandwich, cheese, croissant, icecream, lollipop",SeLECTS_Cleaned_Responses_Food.csv
-4E,13,12,0,0.0,"pizza, apple, noodles, potato, zucchini, chips, sausage, pork, salad, egg",SeLECTS_Cleaned_Responses_Food.csv
-5E,14,13,0,0.0,"spaghettibolognese, pizza, banana, apple, pea, cabbage, lettuce, sausagerolls, mincepie, toast, biscuits, beef",SeLECTS_Cleaned_Responses_Food.csv
-6E,10,9,0,0.0,"banana, apple, pear, sushi, fishfingers, chickenwrap, shepherd'spie, cheesesandwich, jamsandwich",SeLECTS_Cleaned_Responses_Food.csv
-7E,7,6,0,0.0,"pizza, pea, bean, penguinbar, chickennuggets, jam",SeLECTS_Cleaned_Responses_Food.csv
-8E,15,14,0,0.0,"pizza, chips, burger, salad, carrot, biscuits, breadsticks, crackers, hummous, tomato, lettuce, crisps, gherkin, cucumber",SeLECTS_Cleaned_Responses_Food.csv
-9E,10,9,0,0.0,"pizza, curry, chips, ravioli, doughnut, pea, wrap, burrito, taco, cereal",SeLECTS_Cleaned_Responses_Food.csv
+11E,17,16,0,0,"biscuits, candyfloss, chocolate, pork, fish, lamb, sweets, hotdog, popcorn, yoghurt, cerealbar, raisin, salad, tomato, cabbage, sprout, cucumber",SeLECTS_Cleaned_Responses_Food.csv
+12E,18,17,0,0,"spaghetti, fishandchips, pizza, bean, pancake, toastie, hamsandwich, cheese, chocolate, toffee, sausage, chickennuggets, burger, spaghettihoops, crisps, bacon, chicken, lamb",SeLECTS_Cleaned_Responses_Food.csv
+13E,11,10,0,0,"carrot, potato, apple, chewits, jelly, banana, orange, chocolate, wrap, yoghurt, porridge",SeLECTS_Cleaned_Responses_Food.csv
+14E,12,11,0,0,"pizza, apple, pear, wrap, chocolate, chocolatecake, crisps, carrot, roastdinner, orange, banana, tangerine",SeLECTS_Cleaned_Responses_Food.csv
+15E,17,16,0,0,"chewits, chocolate, bread, ham, banana, orange, apple, plum, potato, wrap, lollipop, cheese, egg, crisps, bacon, pepper, tomato",SeLECTS_Cleaned_Responses_Food.csv
+16E,10,9,0,0,"chips, pizza, broccoli, fishcake, fishfingers, pea, chocolate, cheese, bean, fish",SeLECTS_Cleaned_Responses_Food.csv
+17E,8,7,0,0,"lettuce, apple, chips, fish, pizza, burger, pear, banana",SeLECTS_Cleaned_Responses_Food.csv
+19E,15,14,0,0,"pizza, apple, chicken, pasta, couscous, yoghurt, salad, chocolatecake, banana, orange, grape, carrot, potato, kale, beetroot",SeLECTS_Cleaned_Responses_Food.csv
+1E,13,12,0,0,"curry, sausage, mashedpotato, bean, toast, apple, banana, pear, mango, ravioli, spaghetti, cookies, penguinbars",SeLECTS_Cleaned_Responses_Food.csv
+20E,6,5,0,0,"pizza, apple, egg, sausage, bean, tomato",SeLECTS_Cleaned_Responses_Food.csv
+21E,9,8,0,0,"pizza, fish, chips, chocolatedoughnut, chocolate, crisps, biscuits, hamsandwich, taco",SeLECTS_Cleaned_Responses_Food.csv
+22E,14,13,0,0,"banana, apple, sweets, potato, chicken, sandwich, tomato, carrot, cucumber, pineapple, mango, chocolate, cake, icecream",SeLECTS_Cleaned_Responses_Food.csv
+24E,8,7,0,0,"pizza, apple, pear, banana, yoghurt, carrot, pasta, lettuce",SeLECTS_Cleaned_Responses_Food.csv
+25E,21,20,0,0,"apple, banana, orange, grape, grapefruit, passionfruit, pizza, chips, burger, pasta, nuts, crisps, sweets, cake, doughnut, cabbage, carrot, broccoli, sprout, lemon, blackcurrant",SeLECTS_Cleaned_Responses_Food.csv
+26E,14,13,0,0,"pizza, apple, banana, orange, grape, avocado, kiwi, tomato, pepper, onion, chocolate, licorice, burger, chips",SeLECTS_Cleaned_Responses_Food.csv
+28E,12,11,0,0,"margaritapizza, rice, chips, cornflakes, weetabix, cookies, eggplant, celery, carrot, tomato, apple, orange",SeLECTS_Cleaned_Responses_Food.csv
+29E,14,13,0,0,"apple, banana, orange, pear, tomato, potato, pizza, bean, cheese, toast, cereal, sausage, burger, chicken",SeLECTS_Cleaned_Responses_Food.csv
+2E,14,13,0,0,"apple, banana, cheese, crisps, icelolly, fishfingers, fish, chips, pear, melon, watermelon, bread, crumpets, biscuits",SeLECTS_Cleaned_Responses_Food.csv
+3E,8,7,0,0,"lettuce, fruit, hotdog, sandwich, cheese, croissant, icecream, lollipop",SeLECTS_Cleaned_Responses_Food.csv
+4E,13,12,0,0,"pizza, apple, tuna, noodles, turkey, potato, zucchini, chips, chicken, sausage, pork, salad, egg",SeLECTS_Cleaned_Responses_Food.csv
+5E,14,13,0,0,"spaghettibolognese, pizza, banana, apple, pea, cabbage, lettuce, chicken, sausagerolls, mincepie, toast, biscuits, beef, fish",SeLECTS_Cleaned_Responses_Food.csv
+6E,10,9,0,0,"banana, apple, pear, sushi, fishfingers, tuna, chickenwrap, shepherd'spie, cheesesandwich, jamsandwich",SeLECTS_Cleaned_Responses_Food.csv
+7E,7,6,0,0,"pizza, pea, bean, penguinbar, chickennuggets, tuna, jam",SeLECTS_Cleaned_Responses_Food.csv
+8E,15,14,0,0,"fish, pizza, chips, burger, salad, carrot, biscuits, breadsticks, crackers, hummous, tomato, lettuce, crisps, gherkin, cucumber",SeLECTS_Cleaned_Responses_Food.csv
+9E,10,9,0,0,"pizza, curry, chips, ravioli, doughnut, pea, wrap, burrito, taco, cereal",SeLECTS_Cleaned_Responses_Food.csv
