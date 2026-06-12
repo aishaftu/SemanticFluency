@@ -72,7 +72,7 @@ def reshape_data(df):
     
     return melted[['id', 'order', 'word']].sort_values(['id', 'order'])
 
-# Score participant function
+# Score participant function with category tracking
 def score_participant(group, animal_to_categories):
     group = group.sort_values("order").copy()
 
@@ -85,10 +85,12 @@ def score_participant(group, animal_to_categories):
     switches = 0
     cluster_ids = []
     current_cluster = 1
+    word_categories = []  # Track categories for each word
 
     for i in range(len(words)):
         if i == 0:
             cluster_ids.append(current_cluster)
+            word_categories.append(list(categories[i])[0] if categories[i] else "Unknown")
             continue
 
         shared = len(categories[i].intersection(categories[i - 1])) > 0
@@ -99,9 +101,12 @@ def score_participant(group, animal_to_categories):
             switches += 1
             current_cluster += 1
             cluster_ids.append(current_cluster)
+        
+        word_categories.append(list(categories[i])[0] if categories[i] else "Unknown")
 
     temp = group.copy()
     temp["cluster_id"] = cluster_ids
+    temp["category"] = word_categories
 
     cluster_sizes = temp.groupby("cluster_id").size()
     real_clusters = cluster_sizes[cluster_sizes >= 2]
@@ -116,7 +121,8 @@ def score_participant(group, animal_to_categories):
         "switches": switches,
         "n_clusters": len(real_clusters),
         "mean_cluster_size": (real_clusters - 1).mean() if len(real_clusters) > 0 else 0,
-        "unknown_words": ", ".join(unknown_words)
+        "unknown_words": ", ".join(unknown_words),
+        "responses_with_categories": temp.to_dict('records')  # Store full details
     })
 
 # Process each file
@@ -142,7 +148,7 @@ for input_file in files_to_process:
     # Load scheme
     print(f"Loading scheme: {scheme_file}")
     animal_to_categories, scheme_df = load_scheme(scheme_file)
-    print(f"Scheme loaded: {len(scheme_df)} entries, {scheme_df['word'].nunique()} unique categories")
+    print(f"Scheme loaded: {len(scheme_df)} entries, {scheme_df['word'].nunique()} unique words")
     
     # Load fluency data
     print(f"Loading fluency data: {input_file}")
@@ -164,13 +170,34 @@ for input_file in files_to_process:
     # Add source file info
     scores["source_file"] = input_file
     
-    # Save scores
+    # Save main scores file
     output_filename = input_file.replace(".csv", "_scores.csv")
-    scores.to_csv(output_filename, index=False)
+    scores_export = scores[["id", "total_correct", "switches", "n_clusters", "mean_cluster_size", "unknown_words", "source_file"]].copy()
+    scores_export.to_csv(output_filename, index=False)
     print(f"✓ Scores saved to: {output_filename}")
     
+    # Save detailed word-by-word categorization
+    detailed_filename = input_file.replace(".csv", "_word_categories.csv")
+    all_words = []
+    for idx, row in scores.iterrows():
+        participant_id = row['id']
+        if isinstance(row['responses_with_categories'], list):
+            for response in row['responses_with_categories']:
+                all_words.append({
+                    'participant_id': participant_id,
+                    'word': response['word'],
+                    'order': response['order'],
+                    'cluster_id': response['cluster_id'],
+                    'category': response['category']
+                })
+    
+    if all_words:
+        words_df = pd.DataFrame(all_words)
+        words_df.to_csv(detailed_filename, index=False)
+        print(f"✓ Word categories saved to: {detailed_filename}")
+    
     print("\nScores Preview:")
-    print(scores.to_string(index=False))
+    print(scores_export.to_string(index=False))
     
     # Collect for combined report
     all_results.append({
