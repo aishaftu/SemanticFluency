@@ -85,24 +85,36 @@ def score_participant(group, animal_to_categories):
     switches = 0
     cluster_ids = []
     current_cluster = 1
-    word_categories = []  # Track categories for each word
+    word_categories = []
+    cluster_categories = {}  # Track which categories are in each cluster
+    last_cluster_category = None  # Track category of last cluster
 
     for i in range(len(words)):
         if i == 0:
             cluster_ids.append(current_cluster)
-            word_categories.append(list(categories[i])[0] if categories[i] else "Unknown")
+            assigned_category = list(categories[i])[0] if categories[i] else "Unknown"
+            word_categories.append(assigned_category)
+            cluster_categories[current_cluster] = assigned_category
+            last_cluster_category = assigned_category
             continue
 
-        shared = len(categories[i].intersection(categories[i - 1])) > 0
+        assigned_category = list(categories[i])[0] if categories[i] else "Unknown"
+        
+        # Check if current word shares a category with the LAST cluster (not just previous word)
+        shared = assigned_category == last_cluster_category and assigned_category != "Unknown"
 
         if shared:
+            # Same category as current cluster, stay in it
             cluster_ids.append(current_cluster)
         else:
+            # Different category, start new cluster
             switches += 1
             current_cluster += 1
             cluster_ids.append(current_cluster)
+            cluster_categories[current_cluster] = assigned_category
+            last_cluster_category = assigned_category
         
-        word_categories.append(list(categories[i])[0] if categories[i] else "Unknown")
+        word_categories.append(assigned_category)
 
     temp = group.copy()
     temp["cluster_id"] = cluster_ids
