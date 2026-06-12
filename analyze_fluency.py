@@ -1,4 +1,7 @@
 import pandas as pd
+import json
+import subprocess
+import os
 
 # -----------------------------
 # 1. Load scheme file directly
@@ -93,12 +96,30 @@ def score_participant(group):
         if len(cats) == 0
     ]
 
+    # Create clusters dictionary
+    clusters_dict = {}
+    for cluster_id in temp["cluster_id"].unique():
+        cluster_words = temp[temp["cluster_id"] == cluster_id]["word"].tolist()
+        # Only include clusters with size >= 2
+        if len(cluster_words) >= 2:
+            # Get the shared categories for this cluster
+            cluster_categories = []
+            for word in cluster_words:
+                if word in animal_to_categories:
+                    cluster_categories.extend(list(animal_to_categories[word]))
+            clusters_dict[f"Cluster {cluster_id}"] = {
+                "words": cluster_words,
+                "size": len(cluster_words),
+                "categories": list(set(cluster_categories))
+            }
+
     return pd.Series({
         "total_correct": len(words),
         "switches": switches,
         "n_clusters": len(real_clusters),
         "mean_cluster_size": (real_clusters - 1).mean() if len(real_clusters) > 0 else 0,
-        "unknown_words": ", ".join(unknown_words)
+        "unknown_words": ", ".join(unknown_words),
+        "clusters": json.dumps(clusters_dict)
     })
 
 scores = (
@@ -107,8 +128,66 @@ scores = (
     .reset_index()
 )
 
+# Save full results with clusters
 scores.to_csv("animal_fluency_scores_troyer.csv", index=False)
 
-print("\nScores:")
-print(scores.to_string(index=False))
-print(f"\nSaved to: animal_fluency_scores_troyer.csv")
+print("\n" + "="*80)
+print("ANIMAL FLUENCY SCORES WITH CLUSTERS")
+print("="*80)
+
+for idx, row in scores.iterrows():
+    print(f"\n{'='*80}")
+    print(f"PARTICIPANT {int(row['id'])}")
+    print(f"{'='*80}")
+    print(f"Total correct responses: {int(row['total_correct'])}")
+    print(f"Number of switches: {int(row['switches'])}")
+    print(f"Number of clusters: {int(row['n_clusters'])}")
+    print(f"Mean cluster size: {row['mean_cluster_size']:.2f}")
+    if row['unknown_words']:
+        print(f"Unknown words: {row['unknown_words']}")
+    
+    # Parse and display clusters
+    clusters = json.loads(row['clusters'])
+    if clusters:
+        print(f"\nClusters ({len(clusters)}):")
+        for cluster_name, cluster_data in clusters.items():
+            print(f"\n  {cluster_name}:")
+            print(f"    Words: {', '.join(cluster_data['words'])}")
+            print(f"    Size: {cluster_data['size']}")
+            print(f"    Categories: {', '.join(cluster_data['categories'])}")
+    else:
+        print("\nNo clusters (all responses are isolated)")
+
+# Calculate and display means
+print(f"\n{'='*80}")
+print("SUMMARY STATISTICS (MEAN ACROSS ALL PARTICIPANTS)")
+print(f"{'='*80}")
+print(f"Mean total correct responses: {scores['total_correct'].mean():.2f}")
+print(f"Mean number of switches: {scores['switches'].mean():.2f}")
+print(f"Mean number of clusters: {scores['n_clusters'].mean():.2f}")
+print(f"Mean cluster size: {scores['mean_cluster_size'].mean():.2f}")
+
+print(f"\n{'='*80}")
+print(f"Saved to: animal_fluency_scores_troyer.csv")
+print(f"{'='*80}\n")
+
+# Push to repository
+print("Pushing results to GitHub repository...")
+try:
+    # Add the file
+    subprocess.run(["git", "add", "animal_fluency_scores_troyer.csv"], check=True)
+    
+    # Commit the file
+    subprocess.run(
+        ["git", "commit", "-m", "Update animal fluency scores with clusters"],
+        check=True
+    )
+    
+    # Push to repository
+    subprocess.run(["git", "push"], check=True)
+    
+    print("✓ Successfully pushed to GitHub!")
+except subprocess.CalledProcessError as e:
+    print(f"✗ Error pushing to GitHub: {e}")
+except FileNotFoundError:
+    print("✗ Git is not installed or not in PATH")
