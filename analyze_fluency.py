@@ -47,7 +47,7 @@ for csv_file in csv_files:
     # Restructure data: convert from wide format (Response_01, Response_02, ...) to long format
     data_records = []
     for idx, row in df.iterrows():
-        participant_id = row['Participant']
+        participant_id = str(row['Participant']).strip()
         for order, col in enumerate(df.columns[1:], start=1):
             word = row[col]
             # Skip NA and empty values
@@ -141,7 +141,7 @@ for csv_file in csv_files:
     
     for idx, row in scores.iterrows():
         print(f"\n{'='*80}")
-        print(f"PARTICIPANT {int(row['id'])}")
+        print(f"PARTICIPANT {row['id']}")
         print(f"{'='*80}")
         print(f"Total correct responses: {int(row['total_correct'])}")
         print(f"Number of switches: {int(row['switches'])}")
