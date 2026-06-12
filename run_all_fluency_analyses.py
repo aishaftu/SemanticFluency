@@ -11,13 +11,6 @@ files_to_process = [
     "SeLECTS_Cleaned_Responses_jobs.csv",
 ]
 
-# Scheme files mapping - adjust as needed for different categories
-scheme_files = {
-    "Animals": "animals_snafu_scheme.csv",
-    "Food": "food_snafu_scheme.csv",  # You may need to create this
-    "jobs": "jobs_snafu_scheme.csv",   # You may need to create this
-}
-
 # Determine scheme file based on input filename
 def get_scheme_file(input_filename):
     if "Animals" in input_filename:
@@ -46,6 +39,35 @@ def load_scheme(scheme_path):
         .to_dict()
     )
     return animal_to_categories, scheme_df
+
+# Reshape wide format to long format
+def reshape_data(df):
+    """Convert from wide format (Response_01, Response_02, ...) to long format (id, order, word)"""
+    participant_col = df.columns[0]  # Usually 'Participant' or similar
+    response_cols = [col for col in df.columns if col.startswith('Response_')]
+    
+    # Melt from wide to long
+    melted = df.melt(
+        id_vars=[participant_col],
+        value_vars=response_cols,
+        var_name='response_order',
+        value_name='word'
+    )
+    
+    # Extract order number from response column name
+    melted['order'] = melted['response_order'].str.extract('(\d+)').astype(int)
+    
+    # Rename participant column to 'id' and prepare dataframe
+    melted = melted.rename(columns={participant_col: 'id'})
+    melted['word'] = melted['word'].astype(str).str.lower().str.strip()
+    
+    # Remove empty/NA/null responses
+    melted = melted[melted['word'].notna()]
+    melted = melted[melted['word'] != 'nan']
+    melted = melted[melted['word'] != '']
+    melted = melted[melted['word'].str.lower() != 'na']
+    
+    return melted[['id', 'order', 'word']].sort_values(['id', 'order'])
 
 # Score participant function
 def score_participant(group, animal_to_categories):
@@ -121,8 +143,11 @@ for input_file in files_to_process:
     
     # Load fluency data
     print(f"Loading fluency data: {input_file}")
-    df = pd.read_csv(input_file)
-    df["word"] = df["word"].astype(str).str.lower().str.strip()
+    raw_df = pd.read_csv(input_file)
+    
+    # Reshape from wide to long format
+    print(f"Reshaping data from wide to long format...")
+    df = reshape_data(raw_df)
     
     print(f"Fluency data loaded: {df['id'].nunique()} participants, {len(df)} total responses")
     
